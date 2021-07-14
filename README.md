@@ -1,0 +1,1 @@
+# SP-Easy-Image-Gallery-Polish-Translation
