@@ -1,0 +1,24 @@
+{
+  "name": "sp-easy-image-gallery-polish-translation",
+  "version": "1.0.0",
+  "description": "Polskie tłumaczenie przygotowane do komponentu SP Easy Image Gallery Tłumaczenie jest przygotowane do wersji komponentu 2.0 Joomla 3.9",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkonikpl/SP-Easy-Image-Gallery-Polish-Translation.git"
+  },
+  "author": "rKonik Rafał Kobyliński",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rkonikpl/SP-Easy-Image-Gallery-Polish-Translation/issues"
+  },
+  "homepage": "https://github.com/rkonikpl/SP-Easy-Image-Gallery-Polish-Translation#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.1.0"
+  }
+}

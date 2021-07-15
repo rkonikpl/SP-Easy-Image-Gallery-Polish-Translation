@@ -1,7 +1,7 @@
 <extension version="3.9" client="administrator" type="language" method="upgrade">
     <name>Polish (pl-PL)</name> <!-- New in 3.7.0: Use only latin ascii characters. -->
     <tag>pl-PL</tag>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <creationDate>14/07/2021</creationDate>
     <author>rKonik Rafał Kobyliński</author>
     <authorEmail></authorEmail>
