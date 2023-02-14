@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.9" type="package" method="upgrade">
+<extension type="file" method="upgrade">
     <name>SP Easy Image Gallery Polish Translation</name>
-    <packagename>pl-PL</packagename>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
     <creationDate>14/07/2021</creationDate>
     <author>rKonik Rafał Kobyliński</author>
-    <authorEmail></authorEmail>
+    <authorEmail>bok@rkonik.com</authorEmail>
     <authorUrl>rkonik.com</authorUrl>
     <copyright>Copyright (C) 2021 rKonik Rafał Kobyliński and Open Source Matters, Inc. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-    <url></url>
-    <packager></packager>
-    <packagerurl></packagerurl>
+    <url>https://rkonik.com</url>
+    <packager>rKonik Rafał Kobyliński</packager>
+    <packagerurl>https://rkonik.com</packagerurl>
     <description><![CDATA[
 				   <div class="text-center span12">
 				   <h3>Polski Pakiet językowy dla komponentu SP Easy Image Gallery Polish Translation</h3>
@@ -26,9 +25,17 @@
 				   ]]></description>
 <!--    <blockChildUninstall>true</blockChildUninstall> &lt;!&ndash; New in 3.7.0: zapobiega odinstalowaniu osobno części witryny lub części administracyjnych . &ndash;&gt;-->
 
-    <files>
-        <file type="language" client="site" id="pl-PL">site_pl-PL.zip</file>
-        <file type="language" client="administrator" id="pl-PL">admin_pl-PL.zip</file>
+    <scriptfile>script.php</scriptfile>
+
+    <!-- back-end -->
+    <files folder="admin" target="administrator/language/pl-PL">
+        <filename>pl-PL.com_speasyimagegallery.ini</filename>
+        <filename>pl-PL.com_speasyimagegallery.sys.ini</filename>
+    </files>
+
+    <!-- front-end -->
+    <files folder="site" target="language/pl-PL">
+        <filename>pl-PL.com_speasyimagegallery.ini</filename>
     </files>
 
 </extension>
