@@ -9,33 +9,11 @@ let config = {
     packageArchiveName:     'pkg.pl-PL.zip',
     packageArchiveNamePath: "./pkg.pl-PL.zip",
 
-    siteArchiveName:        'site_pl-PL.zip',
-    siteArchiveNamePath:    './site_pl-PL.zip',
-
-    administratorArchiveName:       'admin_pl-PL.zip',
-    administratorArchiveNamePath:   './admin_pl-PL.zip',
-
-}
-
-function createArchiveSite()
-{
-    return src( './site/**/*.*' )
-        .pipe( zip( config.siteArchiveName ) )
-        .pipe( dest( './' ) );
-}
-
-function createArchiveAdministrator()
-{
-    return src( './admin/**/*.*' )
-        .pipe( zip( config.administratorArchiveName ) )
-        .pipe( dest( './' ) );
 }
 
 function createArchivePackage()
 {
     return src([
-        config.siteArchiveNamePath,
-        config.administratorArchiveNamePath,
         config.packagePath
     ])
         .pipe( zip( config.packageArchiveName ) )
@@ -47,14 +25,10 @@ function clean()
 {
     return del([
         config.packageArchiveNamePath,
-        config.siteArchiveNamePath,
-        config.administratorArchiveNamePath
     ]);
 }
 
 exports.default = series(
     clean,
-    createArchiveSite,
-    createArchiveAdministrator,
     createArchivePackage
 );
