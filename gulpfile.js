@@ -3,20 +3,27 @@ const {src, dest, parallel, series, watch} = require('gulp');
 const del       = require('del');
 const zip = require('gulp-zip');
 
-let config = {
-    packageName:            'pkg.pl-PL.xml',
-    packagePath:            './pkg.pl-PL.xml',
+let paths = {
     packageArchiveName:     'pkg.pl-PL.zip',
     packageArchiveNamePath: "./pkg.pl-PL.zip",
 
+    zipFile: [
+        './**/*.*',
+        '!./.gitignore',
+        '!./.idea',
+        '!./gulpfile.js',
+        '!./package.json',
+        '!./package-lock.json',
+        '!./node_modules/**',
+        '!./src/**',
+        '!./pkg.pl-PL.zip'
+    ]
 }
 
 function createArchivePackage()
 {
-    return src([
-        config.packagePath
-    ])
-        .pipe( zip( config.packageArchiveName ) )
+    return src(paths.zipFile)
+        .pipe( zip( paths.packageArchiveName ) )
         .pipe( dest( './' ) );
 }
 
@@ -24,7 +31,7 @@ function createArchivePackage()
 function clean()
 {
     return del([
-        config.packageArchiveNamePath,
+        paths.packageArchiveNamePath,
     ]);
 }
 
