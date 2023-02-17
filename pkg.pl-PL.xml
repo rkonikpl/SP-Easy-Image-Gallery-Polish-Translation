@@ -2,7 +2,7 @@
 <extension type="file" method="upgrade">
     <name>SP Easy Image Gallery Polish Translation</name>
     <version>2.0.1</version>
-    <creationDate>14/07/2021</creationDate>
+    <creationDate>14-07-2021</creationDate>
     <author>rKonik Rafał Kobyliński</author>
     <authorEmail>bok@rkonik.com</authorEmail>
     <authorUrl>rkonik.com</authorUrl>
@@ -29,13 +29,13 @@
 
     <!-- back-end -->
     <files folder="admin" target="administrator/language/pl-PL">
-        <filename>com_speasyimagegallery.ini</filename>
-        <filename>com_speasyimagegallery.sys.ini</filename>
+        <file>com_speasyimagegallery.ini</file>
+        <file>com_speasyimagegallery.sys.ini</file>
     </files>
 
     <!-- front-end -->
     <files folder="site" target="language/pl-PL">
-        <filename>com_speasyimagegallery.ini</filename>
+        <file>com_speasyimagegallery.ini</file>
     </files>
 
 </extension>
