@@ -26,11 +26,9 @@ class speasyimagegalleryInstallerScript extends InstallerScript
 
 		$this->deleteFiles = array(
 			//backend
-			'/administrator/language/pl-PL/pl-PL.com_speasyimagegallery.ini',
-			'/administrator/language/pl-PL/pl-PL.com_speasyimagegallery.sys.ini',
 
 			//frontend
-			'/language/pl-PL/pl-PL.com_speasyimagegallery.ini'
+
 		);
 	}
 

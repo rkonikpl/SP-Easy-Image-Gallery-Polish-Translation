@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="file" method="upgrade">
     <name>SP Easy Image Gallery Polish Translation</name>
-    <version>2.0.1</version>
+    <version>2.0.2</version>
     <creationDate>14-07-2021</creationDate>
     <author>rKonik Rafał Kobyliński</author>
     <authorEmail>bok@rkonik.com</authorEmail>
@@ -14,10 +14,10 @@
     <description><![CDATA[
 				   <div class="text-center span12">
 				   <h3>Polski Pakiet językowy dla komponentu SP Easy Image Gallery Polish Translation</h3>
-				   <p><span style="font-weight: normal">rKonik Rafał Kobyliński przeprowadził kompletne tłumaczenia modułu<br />Przygotowanie kosztuje wiele czasu i pracy.</span></p>
+				   <p><span style="font-weight: normal">rKonik Rafał Kobyliński przeprowadził kompletne tłumaczenia komponentu<br />Przygotowanie kosztuje wiele czasu i pracy.</span></p>
 				   <div class="alert alert-info">
 				   <h3>Jesteś zadowolony z tłumaczenia, Pakiet się przydał i zaoszczędził tobie wiele czasu.</h3>
-
+                    <p style="font-weight: normal">Proszę prześlij informację i uwagi odnośnie tłumaczenia. <br />Zajmie Ci mało czasu a dla mnie to cenne informacje</p>
 				   <p>&nbsp;</p>
 				   <H1>Dziękujemy</h1>
 				   </div>
@@ -27,15 +27,20 @@
 
     <scriptfile>script.php</scriptfile>
 
-    <!-- back-end -->
-    <files folder="admin" target="administrator/language/pl-PL">
-        <file>com_speasyimagegallery.ini</file>
-        <file>com_speasyimagegallery.sys.ini</file>
-    </files>
+    <!-- Fileset definition -->
+    <fileset>
 
-    <!-- front-end -->
-    <files folder="site" target="language/pl-PL">
-        <file>com_speasyimagegallery.ini</file>
-    </files>
+        <!-- back-end -->
+        <files folder="admin" target="administrator/language/pl-PL">
+            <filename>com_speasyimagegallery.ini</filename>
+            <filename>com_speasyimagegallery.sys.ini</filename>
+        </files>
+
+        <!-- front-end -->
+        <files folder="site" target="language/pl-PL">
+            <filename>com_speasyimagegallery.ini</filename>
+        </files>
+
+    </fileset>
 
 </extension>
