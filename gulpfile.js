@@ -21,6 +21,7 @@ let paths = {
     ],
 
     archive: {
+        zipOutput: './outputZIP',
         name: 'pkg.pl-PL_',
         extension: '.zip',
     },
@@ -38,7 +39,6 @@ function getVersionManifest() {
     let $ = cheerio.load(xml, {xmlMode: true});
     let version = $('version')[0].children[0].data;
 
-    console.log(version);
     // console.log(version);
     return version;
 }
@@ -47,7 +47,7 @@ function createArchivePackage()
 {
     return src(paths.zipFile)
         .pipe( zip( paths.archive.name + getVersionManifest() + paths.archive.extension ) )
-        .pipe( dest( './' ) );
+        .pipe( dest( paths.archive.zipOutput ) );
 }
 
 
