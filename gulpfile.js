@@ -9,7 +9,7 @@ let paths = {
     packageArchiveNamePath: "./pkg.pl-PL.zip",
 
     zipFile: [
-        './**/*.*',
+        './app/**/*.*',
         '!./.gitignore',
         '!./.idea',
         '!./gulpfile.js',
@@ -27,7 +27,7 @@ let paths = {
     },
 
     extension: {
-        manifest: './pkg.pl-PL.xml',  // Wskazuje położenie manifestu templatki dla Joomla jako string
+        manifest: './app/pkg.pl-PL.xml',  // Wskazuje położenie manifestu templatki dla Joomla jako string
     }
 }
 
