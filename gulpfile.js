@@ -5,31 +5,9 @@ const cheerio = require('cheerio');
 const del       = require('del');
 const zip = require('gulp-zip');
 
-let paths = {
-    packageArchiveNamePath: "./pkg.pl-PL.zip",
+// adds file with constants
+const { paths } = require("./constants.js");
 
-    zipFile: [
-        './app/**/*.*',
-        '!./.gitignore',
-        '!./.idea',
-        '!./gulpfile.js',
-        '!./package.json',
-        '!./package-lock.json',
-        '!./node_modules/**',
-        '!./src/**',
-        '!./pkg.pl-PL.zip'
-    ],
-
-    archive: {
-        zipOutput: './outputZIP',
-        name: 'pkg.pl-PL_',
-        extension: '.zip',
-    },
-
-    extension: {
-        manifest: './app/pkg.pl-PL.xml',  // Wskazuje położenie manifestu templatki dla Joomla jako string
-    }
-}
 
 function getVersionManifest() {
     // Read config.xml file synchronously
