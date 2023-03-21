@@ -43,4 +43,6 @@
 
     </fileset>
 
+    <changelogurl>https://github.com/rkonikpl/SP-Easy-Image-Gallery-Polish-Translation/raw/main/app/changelog.xml</changelogurl>
+
 </extension>
