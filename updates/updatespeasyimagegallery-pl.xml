@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+    <update>
+        <name>SP Easy Image Gallery Polish Translation</name>
+        <description>Polski pakiet językowy</description>
+
+        <element>pkg.pl-PL</element>
+        <type>file</type>
+        <version>2.0.2</version>
+
+        <downloads>
+            <downloadurl type="full" format="zip">
+                https://github.com/rkonikpl/SP-Easy-Image-Gallery-Polish-Translation/releases/download/v2.0.2/pkg.pl-PL.zip
+            </downloadurl>
+        </downloads>
+
+        <targetplatform name="joomla" version="5\..*" />
+    </update>
+</updates>

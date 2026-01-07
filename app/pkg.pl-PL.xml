@@ -2,12 +2,12 @@
 <extension type="file" method="upgrade">
     <name>SP Easy Image Gallery Polish Translation</name>
     <version>2.0.3</version>
-    <creationDate>14-07-2021</creationDate>
+    <creationDate>2021-07-14</creationDate>
     <author>rKonik Rafał Kobyliński</author>
     <authorEmail>bok@rkonik.com</authorEmail>
-    <authorUrl>rkonik.com</authorUrl>
+    <authorUrl>https://rkonik.com</authorUrl>
     <copyright>Copyright (C) 2021 rKonik Rafał Kobyliński and Open Source Matters, Inc. All rights reserved.</copyright>
-    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <license>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL</license>
     <url>https://rkonik.com</url>
     <packager>rKonik Rafał Kobyliński</packager>
     <packagerurl>https://rkonik.com</packagerurl>
@@ -45,4 +45,9 @@
 
     <changelogurl>https://github.com/rkonikpl/SP-Easy-Image-Gallery-Polish-Translation/raw/main/app/changelog.xml</changelogurl>
 
+    <updateservers>
+        <server type="extension" name="SP Easy Image Gallery PL Updates">
+            https://cdn.rkonik.com/updates/updatespeasyimagegallery-pl.xml
+        </server>
+    </updateservers>
 </extension>
