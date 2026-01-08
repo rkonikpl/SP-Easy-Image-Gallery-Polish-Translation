@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="file" method="upgrade">
     <name>SP Easy Image Gallery Polish Translation</name>
-    <version>2.0.3</version>
+    <version>2.0.4</version>
     <creationDate>2021-07-14</creationDate>
     <author>rKonik Rafał Kobyliński</author>
     <authorEmail>bok@rkonik.com</authorEmail>
@@ -46,7 +46,7 @@
     <changelogurl>https://github.com/rkonikpl/SP-Easy-Image-Gallery-Polish-Translation/raw/main/app/changelog.xml</changelogurl>
 
     <updateservers>
-        <server type="extension" name="SP Easy Image Gallery PL Updates">
+        <server type="extension" name="SP Easy Image Gallery PL Polish Translation">
             https://cdn.rkonik.com/updates/updatespeasyimagegallery-pl.xml
         </server>
     </updateservers>
